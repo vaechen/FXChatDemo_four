@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.fxchatdemo.controllers.ClientMainController">
+   <children>
+      <TextField fx:id="textField_ip" layoutX="38.0" layoutY="23.0" promptText="IP" text="localhost" />
+      <TextField fx:id="textField_port" layoutX="227.0" layoutY="23.0" prefHeight="23.0" prefWidth="73.0" promptText="端口号" text="8001" />
+      <Button fx:id="button_connect" layoutX="329.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#connectTheServer" prefHeight="23.0" prefWidth="61.0" text="连接" />
+      <Button fx:id="button_send" layoutX="423.0" layoutY="286.0" mnemonicParsing="false" onMouseClicked="#sendTheMsg" prefHeight="23.0" prefWidth="85.0" text="发送" />
+      <TextArea fx:id="textArea_message" layoutX="40.0" layoutY="286.0" prefHeight="87.0" prefWidth="373.0" promptText="在此输入文本消息" wrapText="true" />
+      <TextArea fx:id="textArea_reveive" editable="false" layoutX="40.0" layoutY="82.0" prefHeight="158.0" prefWidth="374.0" scrollTop="15.0" wrapText="true" />
+      <Label fx:id="label_username" layoutX="40.0" layoutY="256.0" text="用户名：" />
+      <Label fx:id="label_status" layoutX="40.0" layoutY="54.0" prefHeight="15.0" prefWidth="144.0" text="当前状态：未连接" />
+      <Button fx:id="button_save" layoutX="445.0" layoutY="82.0" mnemonicParsing="false" onMouseClicked="#pressToSave" text="保存消息记录" />
+      <TextField fx:id="textField_username" layoutX="88.0" layoutY="252.0" prefHeight="23.0" prefWidth="86.0" />
+      <Button fx:id="button_decode" layoutX="445.0" layoutY="126.0" mnemonicParsing="false" onMouseClicked="#pressToDecode" prefHeight="23.0" prefWidth="88.0" text="解密消息记录" />
+      <TextField fx:id="textField_password" layoutX="445.0" layoutY="23.0" prefHeight="23.0" prefWidth="111.0" promptText="口令" />
+   </children>
+</AnchorPane>
